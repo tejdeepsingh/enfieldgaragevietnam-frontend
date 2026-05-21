@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 420 260" role="img" aria-label="Service Oil Filter Kit">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1e8"/><stop offset="1" stop-color="#e6d1b3"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".22"/></filter></defs>
+<rect width="420" height="260" rx="24" fill="url(#g)"/>
+<circle cx="54" cy="48" r="34" fill="#b44a2a" opacity=".12"/><circle cx="372" cy="214" r="48" fill="#b44a2a" opacity=".12"/>
+<g filter="url(#s)"><rect x="145" y="70" width="130" height="130" rx="22" fill="#1f1f1f"/><g stroke="#c9a56b" stroke-width="6"><line x1="160" y1="82" x2="160" y2="188"/><line x1="178" y1="82" x2="178" y2="188"/><line x1="196" y1="82" x2="196" y2="188"/><line x1="214" y1="82" x2="214" y2="188"/><line x1="232" y1="82" x2="232" y2="188"/><line x1="250" y1="82" x2="250" y2="188"/><line x1="268" y1="82" x2="268" y2="188"/></g><circle cx="210" cy="135" r="30" fill="#eee"/><circle cx="210" cy="135" r="12" fill="#777"/></g>
+<text x="28" y="232" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#2b2118">Service Oil Filter Kit</text>
+</svg>

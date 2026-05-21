@@ -1,0 +1,14 @@
+
+let products=[]; const $=(s,r=document)=>r.querySelector(s);
+const PASSWORD='admin123'; // DEMO ONLY. Replace with backend auth before production.
+async function init(){try{products=await fetch('data/products.json').then(r=>r.json())}catch(e){products=[]} render();}
+function login(){if($('#pass').value===PASSWORD){localStorage.admin='1';$('#login').classList.add('hide');$('#admin').classList.remove('hide');render()}else alert('Wrong password. Demo password: admin123')}
+function render(){if(localStorage.admin==='1'){ $('#login')?.classList.add('hide'); $('#admin')?.classList.remove('hide') } const tb=$('#rows'); if(!tb)return; tb.innerHTML=products.map((p,i)=>`<tr><td>${p.sku}</td><td>${p.name_en}<br><small>${p.name_vi}</small></td><td>${p.category}</td><td><input value="${p.price_vnd}" onchange="products[${i}].price_vnd=+this.value"></td><td><input value="${p.stock}" onchange="products[${i}].stock=+this.value"></td><td><select onchange="products[${i}].status=this.value"><option ${p.status==='available'?'selected':''}>available</option><option ${p.status==='limited'?'selected':''}>limited</option><option ${p.status==='sold'?'selected':''}>sold</option></select></td><td><button onclick="edit(${i})">Edit</button><button onclick="del(${i})">Delete</button></td></tr>`).join('')}
+function edit(i){const p=products[i]; $('#formTitle').textContent='Edit '+p.sku; $('#idx').value=i; ['id','sku','category','condition','status','name_en','name_vi','description_en','description_vi','price_vnd','price_usd','price_inr','stock','image'].forEach(k=>$('#'+k).value=p[k]??''); $('#compatibility').value=(p.compatibility||[]).join(', ')}
+function clearForm(){ $('#idx').value=''; document.querySelectorAll('#productForm input,#productForm textarea').forEach(x=>x.value=''); $('#status').value='available'; $('#condition').value='new'; $('#formTitle').textContent='Add product'}
+function saveProduct(){const p={}; ['id','sku','category','condition','status','name_en','name_vi','description_en','description_vi','image'].forEach(k=>p[k]=$('#'+k).value.trim()); ['price_vnd','price_usd','price_inr','stock'].forEach(k=>p[k]=+$('#'+k).value||0); p.compatibility=$('#compatibility').value.split(',').map(x=>x.trim()).filter(Boolean); p.tags=[]; p.updated_at=new Date().toISOString().slice(0,10); const i=$('#idx').value; if(i==='')products.unshift(p); else products[+i]=p; render(); clearForm();}
+function del(i){if(confirm('Delete product?')){products.splice(i,1);render()}}
+function download(name,data){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data],{type:'application/json'}));a.download=name;a.click()}
+function exportProducts(){download('products.json',JSON.stringify(products,null,2))}
+function exportInventory(){download('inventory.json',JSON.stringify(products.map(p=>({id:p.id,sku:p.sku,stock:p.stock,status:p.status,updated_at:new Date().toISOString().slice(0,10)})),null,2))}
+window.onload=init;

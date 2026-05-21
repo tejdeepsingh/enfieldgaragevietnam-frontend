@@ -1,0 +1,228 @@
+[
+  {
+    "id": "re500-clutch-plate-set",
+    "sku": "RE500-CL-001",
+    "category": "clutch",
+    "condition": "new",
+    "status": "available",
+    "name_en": "500cc Clutch Plate Set",
+    "name_vi": "Bộ lá côn 500cc",
+    "description_en": "Replacement clutch plate set for Royal Enfield 500cc classics. Confirm model/year before dispatch.",
+    "description_vi": "Bộ lá côn thay thế cho Royal Enfield 500cc cổ điển. Vui lòng xác nhận đời xe/năm trước khi gửi hàng.",
+    "price_vnd": 1250000,
+    "price_usd": 50,
+    "price_inr": 4200,
+    "stock": 4,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500",
+      "Electra 500"
+    ],
+    "image": "assets/images/part-clutch.svg",
+    "tags": [
+      "fast-moving",
+      "engine"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-fuel-pump",
+    "sku": "RE500-FP-014",
+    "category": "fuel",
+    "condition": "oem",
+    "status": "available",
+    "name_en": "EFI Fuel Pump Assembly",
+    "name_vi": "Cụm bơm xăng EFI",
+    "description_en": "Fuel pump assembly for EFI Royal Enfield 500 models. Suitable for service replacement after diagnostics.",
+    "description_vi": "Cụm bơm xăng cho các dòng Royal Enfield 500 EFI. Phù hợp thay thế sau khi kiểm tra kỹ thuật.",
+    "price_vnd": 2850000,
+    "price_usd": 112,
+    "price_inr": 9400,
+    "stock": 2,
+    "compatibility": [
+      "Classic 500 EFI",
+      "Bullet 500 EFI"
+    ],
+    "image": "assets/images/part-fuelpump.svg",
+    "tags": [
+      "electrical",
+      "efi"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-speedometer-cable",
+    "sku": "RE500-SP-032",
+    "category": "controls",
+    "condition": "new",
+    "status": "available",
+    "name_en": "Speedometer Cable",
+    "name_vi": "Dây công tơ mét",
+    "description_en": "Cable replacement for speedometer drive. Keep as a useful maintenance spare.",
+    "description_vi": "Dây thay thế cho cụm công tơ mét. Phụ tùng bảo dưỡng nên có sẵn.",
+    "price_vnd": 260000,
+    "price_usd": 11,
+    "price_inr": 880,
+    "stock": 12,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500",
+      "Machismo 500"
+    ],
+    "image": "assets/images/part-cable.svg",
+    "tags": [
+      "maintenance"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-front-brake-pad",
+    "sku": "RE500-BR-007",
+    "category": "brakes",
+    "condition": "new",
+    "status": "available",
+    "name_en": "Front Brake Pad Set",
+    "name_vi": "Bố thắng trước",
+    "description_en": "Front brake pad set for daily road use. Check caliper type before ordering.",
+    "description_vi": "Bố thắng trước dùng cho di chuyển hằng ngày. Kiểm tra loại heo thắng trước khi đặt.",
+    "price_vnd": 490000,
+    "price_usd": 20,
+    "price_inr": 1650,
+    "stock": 7,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500",
+      "Thunderbird 500"
+    ],
+    "image": "assets/images/part-brake.svg",
+    "tags": [
+      "safety"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-oil-filter-kit",
+    "sku": "RE500-OF-003",
+    "category": "service",
+    "condition": "new",
+    "status": "available",
+    "name_en": "Service Oil Filter Kit",
+    "name_vi": "Bộ lọc dầu bảo dưỡng",
+    "description_en": "Oil filter kit for scheduled service. Recommended to keep multiple units in workshop stock.",
+    "description_vi": "Bộ lọc dầu cho bảo dưỡng định kỳ. Nên dự trữ nhiều bộ tại xưởng.",
+    "price_vnd": 190000,
+    "price_usd": 8,
+    "price_inr": 650,
+    "stock": 18,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500",
+      "Electra 500",
+      "Thunderbird 500"
+    ],
+    "image": "assets/images/part-filter.svg",
+    "tags": [
+      "service",
+      "fast-moving"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-exhaust-silencer",
+    "sku": "RE500-EX-021",
+    "category": "exhaust",
+    "condition": "aftermarket",
+    "status": "limited",
+    "name_en": "Classic Chrome Silencer",
+    "name_vi": "Ống pô chrome cổ điển",
+    "description_en": "Classic-style chrome silencer for restoration and custom builds. Noise compliance varies by locality.",
+    "description_vi": "Ống pô chrome phong cách cổ điển cho phục hồi và độ xe. Quy định tiếng ồn tùy địa phương.",
+    "price_vnd": 3400000,
+    "price_usd": 134,
+    "price_inr": 11200,
+    "stock": 1,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500"
+    ],
+    "image": "assets/images/part-exhaust.svg",
+    "tags": [
+      "custom"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-headlamp-assembly",
+    "sku": "RE500-HL-011",
+    "category": "electrical",
+    "condition": "new",
+    "status": "available",
+    "name_en": "Headlamp Assembly",
+    "name_vi": "Cụm đèn pha",
+    "description_en": "Round headlamp assembly with classic look. Good for restoration and accident repair.",
+    "description_vi": "Cụm đèn pha tròn phong cách cổ điển. Phù hợp phục hồi và sửa chữa sau va chạm.",
+    "price_vnd": 980000,
+    "price_usd": 39,
+    "price_inr": 3300,
+    "stock": 5,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500",
+      "Electra 500"
+    ],
+    "image": "assets/images/part-headlamp.svg",
+    "tags": [
+      "electrical"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-chain-sprocket-kit",
+    "sku": "RE500-CS-018",
+    "category": "drive",
+    "condition": "new",
+    "status": "available",
+    "name_en": "Chain & Sprocket Kit",
+    "name_vi": "Bộ nhông sên dĩa",
+    "description_en": "Drive chain and sprocket kit for smooth power transfer. Check tooth count before order.",
+    "description_vi": "Bộ nhông sên dĩa giúp truyền động êm. Vui lòng kiểm tra số răng trước khi đặt.",
+    "price_vnd": 1650000,
+    "price_usd": 66,
+    "price_inr": 5500,
+    "stock": 3,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500"
+    ],
+    "image": "assets/images/part-chain.svg",
+    "tags": [
+      "service",
+      "drive"
+    ],
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-seat-classic",
+    "sku": "RE500-SE-006",
+    "category": "body",
+    "condition": "aftermarket",
+    "status": "available",
+    "name_en": "Classic Touring Seat",
+    "name_vi": "Yên touring cổ điển",
+    "description_en": "Comfort touring seat for Classic/Bullet style builds. Brown/black options can be added.",
+    "description_vi": "Yên touring thoải mái cho xe phong cách Classic/Bullet. Có thể thêm tùy chọn nâu/đen.",
+    "price_vnd": 2150000,
+    "price_usd": 85,
+    "price_inr": 7100,
+    "stock": 2,
+    "compatibility": [
+      "Classic 500",
+      "Bullet 500"
+    ],
+    "image": "assets/images/part-seat.svg",
+    "tags": [
+      "comfort"
+    ],
+    "updated_at": "2026-05-21"
+  }
+]

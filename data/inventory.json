@@ -1,0 +1,65 @@
+[
+  {
+    "id": "re500-clutch-plate-set",
+    "sku": "RE500-CL-001",
+    "stock": 4,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-fuel-pump",
+    "sku": "RE500-FP-014",
+    "stock": 2,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-speedometer-cable",
+    "sku": "RE500-SP-032",
+    "stock": 12,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-front-brake-pad",
+    "sku": "RE500-BR-007",
+    "stock": 7,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-oil-filter-kit",
+    "sku": "RE500-OF-003",
+    "stock": 18,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-exhaust-silencer",
+    "sku": "RE500-EX-021",
+    "stock": 1,
+    "status": "limited",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-headlamp-assembly",
+    "sku": "RE500-HL-011",
+    "stock": 5,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-chain-sprocket-kit",
+    "sku": "RE500-CS-018",
+    "stock": 3,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  },
+  {
+    "id": "re500-seat-classic",
+    "sku": "RE500-SE-006",
+    "stock": 2,
+    "status": "available",
+    "updated_at": "2026-05-21"
+  }
+]
