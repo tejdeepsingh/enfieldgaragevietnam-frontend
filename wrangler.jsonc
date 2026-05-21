@@ -23,10 +23,6 @@
 	],
 	"r2_buckets": [
 		{
-			"binding": "PART_IMAGES",
-			"bucket_name": "enfieldgaragevietnam-images"
-		},
-		{
 			"bucket_name": "enfieldgaragevietnam-images",
 			"binding": "enfieldgaragevietnam_images"
 		}
