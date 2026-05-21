@@ -15,7 +15,7 @@
 	},
 	"d1_databases": [
 		{
-			"binding": "enfieldgaragevietnam_db",
+			"binding": "DB",
 			"database_name": "enfieldgaragevietnam-db",
 			"database_id": "f2d3fea8-6e5f-417a-b222-96afed1fea61",
 			"remote": true
