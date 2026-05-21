@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 420 260" role="img" aria-label="Classic Chrome Silencer">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1e8"/><stop offset="1" stop-color="#e6d1b3"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".22"/></filter></defs>
+<rect width="420" height="260" rx="24" fill="url(#g)"/>
+<circle cx="54" cy="48" r="34" fill="#b44a2a" opacity=".12"/><circle cx="372" cy="214" r="48" fill="#b44a2a" opacity=".12"/>
+<g filter="url(#s)"><path d="M95 160 L305 105 Q360 92 380 135 Q355 174 306 160 L95 190 Q70 176 95 160z" fill="#c9c9c9"/><path d="M105 168 L310 120" stroke="#fff" stroke-width="7" opacity=".6"/><circle cx="350" cy="136" r="26" fill="#303030"/><circle cx="350" cy="136" r="14" fill="#111"/></g>
+<text x="28" y="232" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#2b2118">Classic Chrome Silencer</text>
+</svg>

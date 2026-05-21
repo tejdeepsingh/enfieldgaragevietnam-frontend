@@ -1,14 +1,43 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "enfieldgaragevietnam-frontend",
-  "compatibility_date": "2026-05-21",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "."
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "enfieldgaragevietnam-frontend",
+	"main": "src/worker.js",
+	"compatibility_date": "2026-05-21",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"observability": {
+		"enabled": true
+	},
+	"assets": {
+		"directory": "./public",
+		"binding": "ASSETS"
+	},
+	"d1_databases": [
+		{
+			"binding": "enfieldgaragevietnam_db",
+			"database_name": "enfieldgaragevietnam-db",
+			"database_id": "f2d3fea8-6e5f-417a-b222-96afed1fea61",
+			"remote": true
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "PART_IMAGES",
+			"bucket_name": "enfieldgaragevietnam-images"
+		},
+		{
+			"bucket_name": "enfieldgaragevietnam-images",
+			"binding": "enfieldgaragevietnam_images"
+		}
+	],
+	"vars": {
+		"ADMIN_USER": "admin",
+		"SITE_NAME": "Enfield Garage Vietnam",
+		"PUBLIC_BASE_URL": "https://enfieldgaragevietnam-frontend.tejdeep-singh.workers.dev",
+		"ZALO_ENABLED": "false"
+	}
 }
+//      "binding": "enfieldgaragevietnam_db",
+//      "database_name": "enfieldgaragevietnam-db",
+//      "database_id": "f2d3fea8-6e5f-417a-b222-96afed1fea61"

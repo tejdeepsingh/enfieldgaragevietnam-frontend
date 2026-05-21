@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enfield Garage Vietnam | Royal Enfield 500cc Parts</title>
+  <meta name="description" content="Royal Enfield 500cc spare parts catalog in Vietnam. Classic 500, Bullet 500, Electra 500, Thunderbird 500 parts." />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="/"><span class="badge">EGV</span><span>Enfield Garage Vietnam</span></a>
+    <nav>
+      <a href="#catalog" data-i18n="navCatalog">Catalog</a>
+      <a href="#how" data-i18n="navHow">How to buy</a>
+      <a href="/admin.html">Owner Login</a>
+      <button id="langBtn" class="ghost">VI</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Royal Enfield 500cc Parts • Vietnam</p>
+        <h1 data-i18n="heroTitle">Find Classic 500 & Bullet 500 parts without the guesswork.</h1>
+        <p data-i18n="heroText">Search parts, check availability, send an inquiry, and confirm payment after owner stock verification.</p>
+        <div class="heroActions">
+          <a href="#catalog" class="btn" data-i18n="browseParts">Browse Parts</a>
+          <a id="zaloTop" href="#" class="btn secondary">Zalo / WhatsApp</a>
+        </div>
+      </div>
+      <img src="/assets/images/hero-bike.svg" alt="Royal Enfield style motorcycle illustration" />
+    </section>
+
+    <section class="trustbar">
+      <div><strong data-i18n="stockFirst">Stock-first</strong><span data-i18n="stockFirstText">Owner confirms before payment</span></div>
+      <div><strong>500cc Focus</strong><span>Classic • Bullet • Electra</span></div>
+      <div><strong data-i18n="bilingual">Bilingual</strong><span>English / Tiếng Việt</span></div>
+      <div><strong data-i18n="payLater">Pay safely</strong><span data-i18n="payLaterText">ZaloPay backend ready later</span></div>
+    </section>
+
+    <section id="catalog" class="section">
+      <div class="sectionHead">
+        <div>
+          <p class="eyebrow" data-i18n="catalogLabel">Parts catalog</p>
+          <h2 data-i18n="catalogTitle">Available Royal Enfield parts</h2>
+        </div>
+        <div class="controls">
+          <input id="search" placeholder="Search part, SKU, model..." />
+          <select id="category"></select>
+          <select id="currency"><option>VND</option><option>USD</option><option>INR</option></select>
+        </div>
+      </div>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <aside id="cart" class="cart">
+      <div class="cartHead"><strong data-i18n="inquiryCart">Inquiry Cart</strong><button id="closeCart">×</button></div>
+      <div id="cartItems"></div>
+      <form id="inquiryForm">
+        <input name="customer_name" placeholder="Your name" required />
+        <input name="phone" placeholder="Phone / Zalo / WhatsApp" required />
+        <input name="email" placeholder="Email optional" />
+        <textarea name="notes" placeholder="Message, delivery city, bike model"></textarea>
+        <button class="btn full" data-i18n="sendInquiry">Send Inquiry</button>
+      </form>
+      <p id="inquiryResult" class="small"></p>
+    </aside>
+    <button id="cartFab" class="cartFab">Inquiry <span id="cartCount">0</span></button>
+
+    <section id="how" class="section how">
+      <h2 data-i18n="howTitle">How buying works</h2>
+      <div class="steps">
+        <div><b>1</b><h3 data-i18n="step1">Choose parts</h3><p data-i18n="step1Text">Search by part, SKU, or motorcycle model.</p></div>
+        <div><b>2</b><h3 data-i18n="step2">Send inquiry</h3><p data-i18n="step2Text">Owner confirms stock, compatibility, condition, and shipping.</p></div>
+        <div><b>3</b><h3 data-i18n="step3">Pay after confirmation</h3><p data-i18n="step3Text">Manual ZaloPay/bank transfer now; automated ZaloPay can be added later.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Enfield Garage Vietnam • enfieldgaragevietnam.vn</footer>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

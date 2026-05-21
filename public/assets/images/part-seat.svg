@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 420 260" role="img" aria-label="Classic Touring Seat">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7f1e8"/><stop offset="1" stop-color="#e6d1b3"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".22"/></filter></defs>
+<rect width="420" height="260" rx="24" fill="url(#g)"/>
+<circle cx="54" cy="48" r="34" fill="#b44a2a" opacity=".12"/><circle cx="372" cy="214" r="48" fill="#b44a2a" opacity=".12"/>
+<g filter="url(#s)"><path d="M85 145 C115 80 250 72 340 110 C375 126 364 169 330 176 H110 C87 176 75 164 85 145z" fill="#3a271c"/><path d="M110 142 C145 105 245 95 320 120" fill="none" stroke="#8a5b35" stroke-width="8"/><rect x="135" y="178" width="160" height="20" rx="8" fill="#333"/></g>
+<text x="28" y="232" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#2b2118">Classic Touring Seat</text>
+</svg>

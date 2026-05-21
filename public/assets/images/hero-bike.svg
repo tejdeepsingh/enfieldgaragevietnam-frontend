@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17120e"/><stop offset=".45" stop-color="#2a1d15"/><stop offset="1" stop-color="#6d321c"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-opacity=".35"/></filter></defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<g opacity=".17"><circle cx="1320" cy="180" r="260" fill="#d7a254"/><circle cx="180" cy="730" r="220" fill="#d7a254"/></g>
+<g transform="translate(200 280)" filter="url(#shadow)">
+<rect x="0" y="230" width="1180" height="26" rx="13" fill="#211a16"/>
+<circle cx="280" cy="240" r="105" fill="#111"/><circle cx="280" cy="240" r="72" fill="#eee"/><circle cx="280" cy="240" r="34" fill="#222"/>
+<circle cx="890" cy="240" r="105" fill="#111"/><circle cx="890" cy="240" r="72" fill="#eee"/><circle cx="890" cy="240" r="34" fill="#222"/>
+<path d="M270 210 C370 70 555 45 680 102 C760 138 820 180 920 208" fill="none" stroke="#d7a254" stroke-width="35" stroke-linecap="round"/>
+<path d="M498 124 h180 q60 0 72 54 l20 86 h-375 l35-95 q14-45 68-45z" fill="#2e312d"/>
+<path d="M542 92 h190 q55 0 105 77" fill="none" stroke="#b54a2b" stroke-width="24" stroke-linecap="round"/>
+<rect x="450" y="44" width="145" height="44" rx="20" fill="#201915"/>
+<circle cx="730" cy="142" r="50" fill="#cfa36a"/><path d="M270 240 L430 150 L630 240 M760 240 L820 170 L890 240" fill="none" stroke="#24201e" stroke-width="16" stroke-linecap="round"/>
+<path d="M770 120 C870 118 930 138 1010 190" fill="none" stroke="#c4c0b6" stroke-width="17" stroke-linecap="round"/>
+</g>
+<text x="120" y="170" font-family="Arial, sans-serif" font-size="54" fill="#fff" font-weight="800">Enfield Garage Vietnam</text>
+<text x="124" y="225" font-family="Arial, sans-serif" font-size="28" fill="#f3d3a5">Royal Enfield 500cc parts catalog • Vietnam</text>
+</svg>

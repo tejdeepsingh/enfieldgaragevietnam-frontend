@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Owner Admin | Enfield Garage Vietnam</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body class="adminBody">
+  <header class="nav"><a class="brand" href="/"><span class="badge">EGV</span><span>Admin</span></a><nav><a href="/">Catalog</a><button id="logout" class="ghost">Logout</button></nav></header>
+  <main class="adminWrap">
+    <section id="loginPanel" class="panel smallPanel">
+      <h1>Owner Login</h1>
+      <p class="small">Set Cloudflare secrets first: ADMIN_PASSWORD and SESSION_SECRET.</p>
+      <form id="loginForm">
+        <input name="username" value="admin" placeholder="Username" />
+        <input name="password" type="password" placeholder="Password" required />
+        <button class="btn full">Login</button>
+      </form>
+      <p id="loginMsg" class="small"></p>
+    </section>
+
+    <section id="adminPanel" class="hidden">
+      <div class="sectionHead">
+        <div><p class="eyebrow">Backend catalog</p><h1>Products, stock and orders</h1></div>
+        <button id="newProduct" class="btn">New Product</button>
+      </div>
+      <div class="adminGrid">
+        <form id="productForm" class="panel">
+          <h2>Product Editor</h2>
+          <input name="id" placeholder="ID auto or existing" />
+          <input name="sku" placeholder="SKU" required />
+          <input name="category" placeholder="Category" required />
+          <input name="name_en" placeholder="Name English" required />
+          <input name="name_vi" placeholder="Name Vietnamese" required />
+          <textarea name="description_en" placeholder="Description English"></textarea>
+          <textarea name="description_vi" placeholder="Description Vietnamese"></textarea>
+          <input name="compatibility" placeholder='Compatibility comma separated: Classic 500, Bullet 500' />
+          <div class="row"><input name="price_vnd" type="number" placeholder="VND" /><input name="price_usd" type="number" step="0.01" placeholder="USD" /><input name="price_inr" type="number" placeholder="INR" /></div>
+          <div class="row"><input name="stock" type="number" placeholder="Stock" /><input name="reserved" type="number" placeholder="Reserved" /><input name="location" placeholder="Location" /></div>
+          <div class="row"><select name="condition"><option>new</option><option>used</option><option>refurbished</option></select><select name="status"><option>available</option><option>sold</option><option>out_of_stock</option><option>hidden</option></select><label><input name="featured" type="checkbox" /> Featured</label></div>
+          <input name="image_url" placeholder="Image URL or upload below" />
+          <input id="imageUpload" type="file" accept="image/*" />
+          <div class="row"><button class="btn">Save Product</button><button type="button" id="deleteProduct" class="btn danger">Delete</button></div>
+          <p id="saveMsg" class="small"></p>
+        </form>
+        <div class="panel">
+          <h2>Products</h2>
+          <div id="adminProducts" class="adminList"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Recent inquiries / orders</h2>
+        <div id="orders" class="orders"></div>
+      </div>
+    </section>
+  </main>
+  <script src="/assets/admin.js"></script>
+</body>
+</html>

@@ -1,52 +1,57 @@
-# Enfield Garage Vietnam Frontend
+# Enfield Garage Vietnam - Cloudflare Worker + D1 + R2
 
-Static-first bilingual product catalog for `enfieldgaragevietnam.vn`.
+Cloudflare-first version of the Royal Enfield 500cc parts catalog.
 
-## Run locally
+## What this includes
+
+- Static frontend served from Cloudflare Workers assets
+- Admin login using Worker API and HttpOnly cookie
+- D1 database for products, inventory and orders/inquiries
+- R2 bucket for product images
+- Bilingual EN/VI catalog
+- Currency display VND/USD/INR
+- Owner admin: add/edit/delete products, upload images, update stock/status, review inquiries
+- ZaloPay placeholder: add later with a secure server-side route
+
+## Setup
 
 ```bash
-python -m http.server 8080
+npm install
+npx wrangler login
+npm run d1:create
+npm run r2:create
 ```
 
-Open:
+Copy the D1 database_id printed by Cloudflare into `wrangler.jsonc`.
 
-```text
-http://localhost:8080
-http://localhost:8080/admin.html
+Set secrets:
+
+```bash
+npx wrangler secret put ADMIN_PASSWORD
+npx wrangler secret put SESSION_SECRET
 ```
 
-Demo admin password:
+Apply schema and seed:
 
-```text
-admin123
+```bash
+npm run d1:migrate:remote
+npm run d1:seed:remote
 ```
 
-## Production hosting
+Deploy:
 
-Upload this folder to GitHub Pages. Configure custom domain:
-
-```text
-enfieldgaragevietnam.vn
+```bash
+npm run deploy
 ```
 
-Add a `CNAME` file containing:
+Local development:
 
-```text
-enfieldgaragevietnam.vn
+```bash
+npm run d1:migrate:local
+npm run d1:seed:local
+npm run dev
 ```
 
 ## Important
 
-The admin page is a static JSON editor/export tool. It is not secure production authentication.
-Use Cloudflare Worker or Google Cloud Run for real login, image uploads, ZaloPay order creation and callbacks.
-
-## ZaloPay
-
-Do not put merchant secret keys in GitHub Pages JavaScript.
-The frontend should call a backend endpoint:
-
-```text
-POST /api/create-zalopay-order
-POST /api/zalopay-callback
-```
-
+Do not put ZaloPay secret keys in frontend JavaScript. ZaloPay order creation and callback validation must be added in `src/worker.js` as server-side API routes.
